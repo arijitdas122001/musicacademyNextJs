@@ -8,8 +8,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setactive}>
-        <MenuItem setActive={setactive} active={active} item="Home">
-        </MenuItem>
+        <Link href={'/'}>Home</Link>
         <MenuItem setActive={setactive} active={active} item="Our Courses">
           <div className="flex flex-col text-sm space-y-4">
           <HoveredLink href="/courses">All Courses</HoveredLink>
